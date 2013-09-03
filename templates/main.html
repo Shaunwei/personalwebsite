@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Shaun Wei Person Webpage</title>
+    {%load staticfiles %}
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-responsive.css'%}" ref="stylesheet">
+    <link href="{% static 'css/docs.css' %}" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">  
+
+<!-- ===================================Navbar================================================ -->
+  	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Project name</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              Logged in as <a href="#" class="navbar-link">Username</a>
+            </p>
+            <ul class="nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+<!-- ========================================Subhead =================================-->
+<header class="jumbotron subhead" id="overview">
+	<div class="container">
+		<h1>Xiao Wei</h1>
+		<p class="lead"><a href="#">Reach me on Github</a>This is Xiao Wei's website</p>
+	</div>
+</header>
+
+
+<div class="container-fluid">
+
+	<!-- Docs nav=============================================== -->
+	<div class="row-fluid">
+		<div class="span3 bs-docs-sidebar">
+			<ul class="nav nav-list bs-docs-sidenav affix">
+				<li><a href="#whats-new"><i class="icon-chevron-right"></i> News</a></li>
+				<li><a href="#cs-resume"><i class="icon-chevron-right"></i> CS resume</a></li>
+				<li><a href="#ee-resume"><i class="icon-chevron-right"></i> EE resume</a></li>
+			</ul>
+		</div>
+
+	<div class="span9">
+
+		<!-- what's new -->
+		<section id="whats-new">
+			<div class="hero-unit">
+				<h1>News on website</h1>
+				<p> This is my top line</p>
+				<p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+			</div>
+		</section>
+
+
+
+
+		<!-- CS resume  -->
+		<section id="cs-resume">
+			<div class="page-header">
+				<h1>1. Computer Engineering Resume</h1>
+			</div>
+			<p class="lead">this is text here</p>
+			{% block content%}
+		  	{% endblock%}
+		</section>
+
+		<!-- EE resume  -->
+		<section id="ee-resume">
+			<div class="page-header">
+				<h1>2. Electronic Engineering Resume</h1>
+			</div>
+			<p class="lead">this is text here</p>
+		</section>
+
+	</div>
+</div>
+</div>
+
+
+
+
+		<!-- Footer==================================================== -->
+		<footer class="footer">
+			<div class="container">
+				<p>Powered by Django, Bootstrap</p>
+			</div>
+		</footer>
+
+
+	  <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript"></script>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/transition.js"></script>
+    <script src="static/js/alert.js"></script>
+    <script src="static/js/modal.js"></script>
+    <script src="static/js/dropdown.js"></script>
+    <script src="static/js/scrollspy.js"></script>
+    <script src="static/js/tab.js"></script>
+    <script src="static/js/tooltip.js"></script>
+    <script src="static/js/popover.js"></script>
+    <script src="static/js/button.js"></script>
+    <script src="static/js/collapse.js"></script>
+    <script src="static/js/carousel.js"></script>
+    <script src="static/js/typeahead.js"></script>
+    <script src="static/js/affix.js"></script>
+    <script src="static/js/holder.js"></script>
+    <script src="static/js/application.js"></script>
+    <script src="static/js/widgets.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+
+	</body>
+</html>

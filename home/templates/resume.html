@@ -1,0 +1,15 @@
+{% extends 'main.html'%}
+
+{%block content%}
+{% for info in homeinfo%}
+  	<p>{{info.title}}</p>
+  	<p>{{info.objective}}</p>
+  	<p>{{info.ob_content}}</p>
+  	<p>{{info.skills}}</p>
+  	<p>{{info.sk_content}}</p>
+  	<p>{{info.projects}}</p>
+  	<p>{{info.pr_content}}</p>
+  	<p>{{info.education}}</p>
+  	<p>{{info.ed_content}}</p>
+{%endfor%}  
+{%endblock%}
