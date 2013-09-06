@@ -24,9 +24,9 @@ def test(request):
 
 
 def pdf_view_cs(request):
-	with open(os.path.join(os.path.dirname(os.path.realpath(__file__)),'XiaoWei_ResumeCS_9_6.pdf'),'rb') as pdf:
+	with open(os.path.join(os.path.dirname(os.path.realpath(__file__)),'Xiao_Wei_ResumeCS_9_6_13.pdf'),'rb') as pdf:
 		response = HttpResponse(pdf.read(), content_type='application/pdf')
-		response['Content-Disposition'] = 'inline; filename =XiaoWei_ResumeCS_9_6.pdf'
+		response['Content-Disposition'] = 'inline; filename =Xiao_Wei_ResumeCS_9_6_13.pdf'
 		return response
 
 def pdf_view_ee(request):
