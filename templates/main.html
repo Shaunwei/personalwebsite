@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Shaun Wei Person Webpage</title>
+    <title>Shaun Wei Personal Website</title>
     {%load staticfiles %}
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,15 +22,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Project name</a>
+          <a class="brand" href="#">Xiao Wei Website</a>
           <div class="nav-collapse collapse">
-            <p class="navbar-text pull-right">
-              Logged in as <a href="#" class="navbar-link">Username</a>
-            </p>
             <ul class="nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="http://django-mywebsite.herokuapp.com/">Home</a></li>
+              <li><a href="http://flask-taskr.herokuapp.com/users/">Project:Python Flask</a></li>
+              <li><a href="http://django-rapidwebdev.herokuapp.com/">Project:Python Django</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -40,9 +37,11 @@
 <!-- ========================================Subhead =================================-->
 <header class="jumbotron subhead" id="overview">
 	<div class="container">
-		<h1>Xiao Wei</h1>
-		<p class="lead"><a href="#">Reach me on Github</a>This is Xiao Wei's website</p>
-	</div>
+		<h1>Welcome</h1>
+    <h3>Thanks for your visit. This is Xiao Wei's website</h3>
+<!-- 		<p class="lead">Reach me on<a href="#">Github</a></p>
+    <p class="lead">Welcome to Xiao Wei's website</p>
+ -->	</div>
 </header>
 
 
@@ -53,8 +52,11 @@
 		<div class="span3 bs-docs-sidebar">
 			<ul class="nav nav-list bs-docs-sidenav affix">
 				<li><a href="#whats-new"><i class="icon-chevron-right"></i> News</a></li>
+        <li><a href="#about"><i class="icon-chevron-right"></i> About</a></li>
 				<li><a href="#cs-resume"><i class="icon-chevron-right"></i> CS resume</a></li>
 				<li><a href="#ee-resume"><i class="icon-chevron-right"></i> EE resume</a></li>
+        <li><a href="#current-interests"><i class="icon-chevron-right"></i> Current Interests</a></li>
+        <li><a href="#related-links"><i class="icon-chevron-right"></i> Related Links</a></li>
 			</ul>
 		</div>
 
@@ -63,32 +65,56 @@
 		<!-- what's new -->
 		<section id="whats-new">
 			<div class="hero-unit">
-				<h1>News on website</h1>
-				<p> This is my top line</p>
+				<h1>Available for Hiring</h1>
+        <h2>Give me one chance, I will prove myself</h2>
+				<p>Optimistic & Enthusiasm & self-motivated</p>
 				<p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
 			</div>
 		</section>
 
-
+    <!-- About -->
+    <section id="about">
+      <div class="page-header">
+        <h1>1. About</h1>
+      </div>
+      <!-- <p class="lead">this is text here</p> -->
+      {% include 'about.html' %}
+    </section>
 
 
 		<!-- CS resume  -->
 		<section id="cs-resume">
 			<div class="page-header">
-				<h1>1. Computer Engineering Resume</h1>
+				<h1>2. Computer Engineering Resume</h1>
 			</div>
-			<p class="lead">this is text here</p>
-			{% block content%}
-		  	{% endblock%}
+			<!-- <p class="lead">this is text here</p> -->
+			{% include 'ResumeCS.html' %}
 		</section>
 
 		<!-- EE resume  -->
 		<section id="ee-resume">
 			<div class="page-header">
-				<h1>2. Electronic Engineering Resume</h1>
+				<h1>3. Electronic Engineering Resume</h1>
 			</div>
-			<p class="lead">this is text here</p>
+			<!-- <p class="lead">this is text here</p> -->
+      {% include 'ResumeEE.html' %}
 		</section>
+
+    <!-- Current Interests -->
+    <section id="current-interests">
+      <div class="page-header">
+        <h1>4. Current Interests</h1>
+      </div>
+      {% include 'interests.html' %}
+    </siction>
+
+    <!-- Related Links -->
+    <section id='related-links'>
+      <div class="page-head">
+        <h1>5. Related Links</h1>
+      </div>
+      {% include 'relatedlinks.html' %}
+    </section>
 
 	</div>
 </div>
