@@ -16,5 +16,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^home/', include('home.urls')),
     url(r'^$', 'home.views.test', name='test'),
+    url(r'^CSresume$','home.views.pdf_view_cs',name='pdf_view_cs'),
+    url(r'^EEresume$','home.views.pdf_view_ee',name='pdf_view_ee'),
     
 )
