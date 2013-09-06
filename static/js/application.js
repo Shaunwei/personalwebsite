@@ -49,11 +49,7 @@
       $('.bs-top').affix()
     }, 100)
 
-    // tooltip demo
-    $('.tooltip-demo').tooltip({
-      selector: "[data-toggle=tooltip]",
-      container: "body"
-    })
+    
 
     $('.tooltip-test').tooltip()
     $('.popover-test').popover()
@@ -64,7 +60,7 @@
     })
 
     // popover demo
-    $("[data-toggle=popover]")
+    $("#offer")
       .popover()
 
     // button state demo
@@ -79,6 +75,9 @@
 
     // carousel demo
     $('.bs-docs-carousel-example').carousel()
+
+    //model 
+    $("#example").modal('show')
 })
 
 }(window.jQuery)
